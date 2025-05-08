@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #a7ffeb); /* Verde claro gradiente */
+    background-attachment: fixed; /* Para o gradiente cobrir toda a tela */
+    color: #333;
+    animation: backgroundScroll 10s linear infinite alternate; /* Animação sutil */
+}
+
+@keyframes backgroundScroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #388e3c; /* Verde mais escuro para o título */
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-area input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda mais clara */
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.input-area button {
+    background-color: #388e3c; /* Verde mais escuro para o botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.input-area button:hover {
+    background-color: #2e7d32; /* Verde ainda mais escuro no hover */
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* Borda mais clara */
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li span {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+#task-list li button {
+    background-color: #c62828; /* Vermelho mais escuro para remover */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+#task-list li button:hover {
+    background-color: #b71c1c; /* Vermelho ainda mais escuro no hover */
+}
+
+#task-list li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#task-list li .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-area input[type="text"] {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .input-area button {
+        border-radius: 4px;
+    }
+
+    #task-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+
+    #task-list li span {
+        margin-bottom: 5px;
+    }
+
+    #task-list li button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
