@@ -4,7 +4,7 @@ Este repositório é um mergulho em como criar uma interface de usuário funcion
  * HTML: A espinha dorsal da estrutura da página, organizando os elementos essenciais como a área de entrada de novas tarefas e a lista em si.
  * CSS: A beleza por trás da funcionalidade! Explore como o layout (com Flexbox para um design flexível), as cores (com um tema verde claro gradiente!), a tipografia e a responsividade para diferentes dispositivos foram implementados. Destaque para a animação sutil do background! ✨
  * JavaScript: A inteligência que dá vida ao aplicativo! Descubra como implementei a lógica para adicionar novas tarefas, marcar como concluídas (com text-decoration: line-through), remover itens da lista e persistir os dados localmente no navegador com localStorage.
-🔗 Link do Repositório: [COLE O LINK DO SEU REPOSITÓRIO GITHUB AQUI!]
+🔗 Link do Repositório: https://github.com/tatiane347/Aplicativo-Lista-De-Tarefas-
 Dentro deste repositório, você encontrará:
  * Arquivos index.html, style.css e script.js claramente separados e organizados.
  * Código bem estruturado e comentado para facilitar a compreensão (se você os comentou!).
